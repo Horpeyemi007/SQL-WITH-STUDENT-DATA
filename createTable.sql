@@ -1,0 +1,57 @@
+-- SECTION B
+-- CREATE TABLE
+-- FIRST TABLE
+CREATE TABLE class_one(
+ID	SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+Last_name VARCHAR(20),
+First_name VARCHAR(20),
+Gender CHAR(10) NOT NULL,
+Assignment_score TINYINT UNSIGNED,
+Test_score TINYINT UNSIGNED,
+Exam_score TINYINT UNSIGNED,
+PRIMARY KEY (ID),
+CHECK (Test_score <= 25 ),
+CHECK (Assignment_score <= 15),
+CHECK (Exam_score <= 60)
+);
+
+-- Adding a new column in class_one TABLE "Total_score"...
+ALTER table class_one
+ADD Total_score TINYINT UNSIGNED
+CHECK (Total_score <= 100);
+
+-- SECOND TABLE
+-- CREATING ANOTHER TABLE INSDE THE SCHEMA AND NAME IT AS CLASS_TWO..
+CREATE TABLE class_two(
+ID	SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+Last_name VARCHAR(20),
+First_name VARCHAR(20),
+Gender CHAR(10) NOT NULL,
+Assignment_score TINYINT UNSIGNED,
+Test_score TINYINT UNSIGNED,
+Exam_score TINYINT UNSIGNED,
+Total_score TINYINT UNSIGNED NULL,
+PRIMARY KEY (ID),
+CHECK (Test_score <= 25 ),
+CHECK (Assignment_score <= 15),
+CHECK (Exam_score <= 60),
+CHECK (Total_score <= 100)
+);
+
+-- THIRD TABLE
+-- CREATING ANOTHER TABLE INSDE THE SCHEMA AND NAME IT AS CLASS_THREE..
+CREATE TABLE class_three(
+ID	SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+Last_name VARCHAR(20),
+First_name VARCHAR(20),
+Gender CHAR(10) NOT NULL,
+Assignment_score TINYINT UNSIGNED,
+Test_score TINYINT UNSIGNED,
+Exam_score TINYINT UNSIGNED,
+Total_score TINYINT UNSIGNED NULL,
+PRIMARY KEY (ID),
+CHECK (Test_score <= 25 ),
+CHECK (Assignment_score <= 15),
+CHECK (Exam_score <= 60),
+CHECK (Total_score <= 100)
+);
