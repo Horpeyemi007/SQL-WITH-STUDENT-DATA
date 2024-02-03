@@ -16,3 +16,5 @@
 - The **"queryData.sql"** script analyze student performance using the select method, subquery method, count and group methods.
 
 - The **"joinData.sql"** script join the "class_one" and "class_two" record to compare student performance accross classes.
+
+📘✌️
